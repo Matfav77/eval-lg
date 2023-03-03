@@ -46,7 +46,7 @@ async function main(pathToJsonFile, pathToCreatedCsvFile) {
 
     });
 
-    if (!fs.existsSync(pathToJsonFile)) return console.log('The input file with users data cannot be found in the "data" folder, please ensure it is there before running this script.');
+    if (!fs.existsSync(pathToJsonFile)) return console.log(`The input file with users data cannot be found at this path ${pathToJsonFile}, please ensure it is there before running this script.`);
 
     const readStream = fs.createReadStream(pathToJsonFile, 'utf-8');
     const writeStream = fs.createWriteStream(pathToCreatedCsvFile, 'utf-8');
