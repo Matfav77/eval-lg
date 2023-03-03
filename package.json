@@ -1,0 +1,13 @@
+{
+  "name": "eval-lg",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "JSONStream": "^1.3.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
